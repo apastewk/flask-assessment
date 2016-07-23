@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Application-Form{% endblock %}
+
+
+{% block content %}
+
+    <h1>Application Form</h1>
+    <h4>
+        Welcome! We are thrilled that you are interested in joining our company Please fill out all of the information below.
+    </h4>
+    <br>
+    <form action="/application" method="POST">
+        <label for="field-firstname">First Name:</label>
+            <input type="text" name="firstname" id="field-firstname">
+        <br>
+        <br>
+        <label for="field-lastname">Last Name:</label>
+            <input type="text" name="lastname" id="field-lastname">
+        <br>
+        <br>
+        <label for="field-salaryrequirement">Salary Requirement:</label>
+            <input type="int" name="salaryrequirement" id="field-salaryrequirement">
+        <br>
+        <br>
+        <label for="field-jobposition">Job Position:</label>
+            <select name="jobposition" id="field-jobposition">
+                <option value="Software Engineer">Software Engineer</option>
+                <option value="QA Engineer">QA Engineer</option>
+                <option value="Product Manager">Product Manager</option>
+            </select>
+        <br>
+        <br>
+        <label for="field-submit"></label>
+        <input type="submit" id="field-submit">
+    </form>
+
+{% endblock %}

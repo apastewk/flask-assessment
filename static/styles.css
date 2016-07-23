@@ -1,0 +1,27 @@
+input {
+    background-color: #ffffe5;
+}
+
+h4 {
+    border: 2px dotted black;
+    padding: 3px;
+}
+
+#field-lastname {
+    font-weight: bold;
+}
+
+h1 {
+    font-family: arial black;
+    color: darkblue;
+}
+
+body {
+    background-color: #ffe6e6;
+}
+
+div {
+    border: 2px dotted black;
+    padding: 3px;
+    margin: 20px;
+}
